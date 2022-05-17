@@ -1,0 +1,190 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="shortcut icon" href="./imagenes/logoTodoCachimba-PhotoRoom.ico">
+        <title>Registrarse</title>
+        <style>
+            .fondocss
+        {
+        position: fixed; 
+        right: 0; 
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        width: auto; 
+        height: auto; 
+        z-index: -1;
+        }
+        </style>
+        <script>
+
+            window.addEventListener("load",iniciar);
+
+            let usuarios =  [{
+                usuario:"samuel",
+                contra : "Champion10!",
+                correo : "gilsamuel685@gmail.com"
+            }
+            ];
+
+
+            function iniciar(){
+
+                document.getElementById("registro").addEventListener("submit",(e) => {e.preventDefault();
+		 
+		 validar();
+   });
+
+
+                function validar(){
+
+                    var correo = document.getElementById("correo").value;
+                    var usuario = document.getElementById("usuario").value;
+                    var contra = document.getElementById("contra").value;
+
+                    var expresionCorreo = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+                    var expresionUsuario = /^[a-z0-9ü][a-z0-9ü_]{3,9}$/;
+                    var expresionContra = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,15}$/;
+
+                    if(expresionCorreo.test(correo) == false && expresionUsuario.test(usuario) == false && expresionContra.test(contra) == false){
+
+                        document.getElementById("falloCorreo").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>El correo es invalido</div></div>';
+                        document.getElementById("falloUsuario").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>El usuario no es valido:<br/> -El usuario debe tener entre 3 y 10 caracteres<br/>-Solo letras minusculas<br/>-Subrayados admitidos(excepto primera posicion)</div></div>';
+                        document.getElementById("falloContra").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>La contraseña no es valida:<br/> -La contraseña debe estar entre 8 y 15 caracteres<br/>-Al menos una letra minúscula<br/>-Al menos una letra mayúscula<br/>-Al menos un dígito<br/>-No espacios en blanco<br/>-Al menos un caracter especial</div></div>';
+                        return false;
+                    }else if(expresionCorreo.test(correo) == false && expresionUsuario.test(usuario) == false){
+                        document.getElementById("falloCorreo").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>El correo es invalido</div></div>';
+                        document.getElementById("falloUsuario").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>El usuario no es valido:<br/> -El usuario debe tener entre 3 y 10 caracteres<br/>-Solo letras minusculas<br/>-Subrayados admitidos(excepto primera posicion)</div></div>';
+                        document.getElementById("falloContra").innerHTML = "";
+
+                        return false;
+
+                    }else if(expresionUsuario.test(usuario) == false && expresionContra.test(contra) == false){
+
+                        document.getElementById("falloUsuario").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>El usuario no es valido:<br/> -El usuario debe tener entre 3 y 10 caracteres<br/>-Solo letras minusculas<br/>-Subrayados admitidos(excepto primera posicion)</div></div>';
+                        document.getElementById("falloCorreo").innerHTML = "";
+                        document.getElementById("falloContra").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>La contraseña no es valida:<br/> -La contraseña debe estar entre 8 y 15 caracteres<br/>-Al menos una letra minúscula<br/>-Al menos una letra mayúscula<br/>-Al menos un dígito<br/>-No espacios en blanco<br/>-Al menos un caracter especial</div></div>';
+                        
+                        return false;
+
+                    }else if(expresionCorreo.test(correo) == false && expresionContra.test(contra) == false){
+                        document.getElementById("falloUsuario").innerHTML = '';
+                        document.getElementById("falloContra").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>La contraseña no es valida:<br/> -La contraseña debe estar entre 8 y 15 caracteres<br/>-Al menos una letra minúscula<br/>-Al menos una letra mayúscula<br/>-Al menos un dígito<br/>-No espacios en blanco<br/>-Al menos un caracter especial</div></div>';
+                        document.getElementById("falloCorreo").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>El correo es invalido</div></div>';
+
+                        return false;
+                    }else if(expresionCorreo.test(correo) == false){
+
+                        document.getElementById("falloCorreo").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>El correo es invalido</div></div>';
+                        document.getElementById("falloUsuario").innerHTML = "";
+                        document.getElementById("falloContra").innerHTML = "";
+
+                        return false;
+
+                    }else if(expresionUsuario.test(usuario) == false){
+
+                        document.getElementById("falloCorreo").innerHTML = "";
+                        document.getElementById("falloUsuario").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>El usuario no es valido:<br/> -El usuario debe tener entre 3 y 10 caracteres<br/>-Solo letras minusculas<br/>-Subrayados admitidos(excepto primera posicion)</div></div>';
+                        document.getElementById("falloContra").innerHTML = "";
+
+                        return false;
+
+                    }else if(expresionContra.test(contra) == false){
+                        document.getElementById("falloCorreo").innerHTML = "";
+                        document.getElementById("falloUsuario").innerHTML = "";
+                        document.getElementById("falloContra").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>La contraseña no es valida:<br/> -La contraseña debe estar entre 8 y 15 caracteres<br/>-Al menos una letra minúscula<br/>-Al menos una letra mayúscula<br/>-Al menos un dígito<br/>-No espacios en blanco<br/>-Al menos un caracter especial</div></div>';
+                         return false;
+                    }else {
+                        var existe;
+                        for(var i = 0; i < usuarios.length;i++){
+                            if(usuarios[i].usuario == usuario || usuarios[i].contra == contra || usuarios[i].correo == correo){
+                                existe = true;
+                            }
+                        }
+
+                        if(existe == true){
+                            document.getElementById("falloExiste").innerHTML = '<div class="alert alert-danger d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg><div>El usuario ya existe</div></div>';
+                            return false;
+                        }else{
+                            var user = { usuario: usuario, contra: contra, correo:correo};
+                            usuarios.push(user);
+                            window.location.href = "inicio.html";
+                            return true;
+                            
+                        }
+                        
+                        
+                    }
+                }
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+           
+            <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </symbol>
+          </svg>
+        <img src="imagenes/fondoHumo.jpg"  class="fondocss" id="fondo"/>
+        <section class="h-100">
+            <div class="container h-100">
+                <div class="row justify-content-sm-center h-100">
+                    <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+                        <div class="text-center my-3">
+                            <img src="imagenes/logoTodoCachimba-PhotoRoom.png" alt="logo" width="200">
+                        </div>
+                        <div class="card shadow-lg">
+                            <div class="card-body p-5">
+                                <h1 class="fs-4 card-title fw-bold mb-4">Registrarse</h1>
+                                <form  id="registro" autocomplete="off">
+                                    <div class="mb-3">
+                                        <label class="mb-2 text-muted" for="email">Correo electronico</label>
+                                        <input id="correo" type="email" class="form-control" name="correo" value="" required autofocus>
+                                        <div  id="falloCorreo">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="mb-2 text-muted" for="Usuario">Usuario</label>
+                                        <input id="usuario" type="text" class="form-control" name="usuario" value="" required autofocus>
+                                        <div id="falloUsuario">
+                                           
+                                        </div>
+                                    </div>
+    
+                                    <div class="mb-3">
+                                        
+                                        <label class="text-muted" for="password">Contraseña</label>
+                                        <input id="contra" type="password" class="form-control" name="contra" required>
+                                        <div id="falloContra" >
+                                            
+                                        </div>
+                                    </div>
+                                    <div id="falloExiste">
+                                           
+                                    </div>
+                                    <div class="text-center">
+                                        
+                                        <button type="submit" class="btn btn-primary ms-auto btn-lg">
+                                            Registrarse
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        <div class="text-center mt-5 text-muted">
+                            Copyright &copy; 2017-2021 &mdash; Todocachimba.com 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

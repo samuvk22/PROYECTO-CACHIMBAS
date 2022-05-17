@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>Todocachimba.com</title>
+        <link rel="shortcut icon" href="./imagenes/logoTodoCachimba-PhotoRoom.ico">
+        
+        <script src="./JS/JSINICIAL.js"></script>
+        
+    </head>
+    <body>
+      <div id="cabecera">
+        <div id="arriba"class="bg-dark text-white jumbotron h10 p-4 m-0 d-flex justify-content-between">
+            <div class="fs-5"><a class="text-decoration-none text-white" href="./WEBCACHIMBAS.html"><img src="imagenes/logoTodoCachimba-PhotoRoom.png" height ="50" width="50" />Todo sobre cachimbas a tu dispocicion - Todocachimba.com</a></div>
+            <div class="text-right row">
+              <div class="dropdown col-3">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="imagenes/carritoTop-PhotoRoom.png" class="nav-link dropdown-toggle " height="50px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div id="carrito" >
+                  <table id="lista-carrito" class="table">
+                      <thead>
+                          <tr>
+                              <th>Imagen</th>
+                              <th>Nombre</th>
+                              <th>Precio</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+
+                  <button href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</button>
+                  <button href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</button>
+              </div>
+              </ul>
+            </div>
+            <div class="col-9 mt-2">
+              <a id="sesion"href="Inicio.html"class="text-decoration-none text-white fs-5">Entrar o ingresar a la Web</a>
+            </div>
+          </div>
+        
+          </div>
+      
+        <nav class="navbar navbar-expand-lg navbar-light mt-3">
+            <div class="container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class=" collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-5 mr-0">
+                  <li class="nav-item mx-5 text-center">
+                    
+                    <a class="nav-link active" aria-current="page" href="Cachimbas.html">Cachimbas<img src="" height ="50" width="50" id="nav" /></a>
+                  </li>
+                  <li class="nav-item mx-5 text-center">
+                    
+                    <a class="nav-link active" href="Cazoletas.html" >Cazoletas<img src="" height ="50" width="50" id="nav"/></a>
+                  </li>
+                  <li class="nav-item mx-5 text-center">
+                    
+                    <a class="nav-link active" href="./Sabores.html">Sabores<img src="" height ="50" width="50" id="nav"/></a>
+                  </li>
+                  <li class="nav-item mx-5 text-center">
+                    
+                    <a class="nav-link active" href="./Accesorios.html">Accesorios<img src="" height ="50" width="50" id="nav"/></a>
+                  </li>
+                  <li class="nav-item mx-5 text-center">
+                    
+                    <a class="nav-link active" href="./Boquillas.html" >Boquillas<img src="" height ="50" width="50" id="nav"/></a>
+                  </li>
+                  <li class="nav-item mx-5 text-center">
+                    
+                    <a class="nav-link active" href="./Contacto.html" >Contacto<img src="" height ="50" width="50" id="nav"/></a>
+                  </li>
+                </ul>
+                <div class="d-flex mr-5">
+                  <button class="btn " type="button" id="micro"><img src="imagenes/micro.png" height ="25" width="15" /></button>
+                  <input class="form-control me-2" id="textoBusca" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn" type="button" id="buscar"><img src="imagenes/lipa.png" height ="25" width="25" /></button>
+                  
+                </div>
+                
+              </div>
+             
+            </div>
+          </nav>
+         
+        </div>
+          <div id="carouselExampleIndicators" class="carousel slide text-center mt-3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000" >
+                <img src=""  alt="First slide" height ="500" width="1600" id="carusel">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000" >
+                <img src=""  alt="Second slide" height ="500" width="1600" id="carusel">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000" >
+                <img src=""  alt="Third slide" height ="500" width="1600" id="carusel">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div id="cuerpo" class="container">
+              <div class="row" id="apartadoNov">
+                  <div class="col-12 text-center mt-5">
+                    <H1>NOVEDADES</H1>
+                  </div>
+                  <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide text-center mt-3" data-bs-ride="carousel">
+                      
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                          <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                              <div class="card h-100 border-light" style="width: 25rem;" id="novedad">
+                                <img src="" class="card-img-top "height ="400" width="500" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title" id="nombreNovedad"></h5>
+                                  <p class="card-text mt-3" id="precioNovedad"></p>
+                                  <button class="btn btn-dark agregar-carrito" type="button" ><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-4 ">
+                              <div class="card h-100 border-light" style="width: 25rem;" id="novedad">
+                                <img src="" class="card-img-top" height ="400" width="500" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title" id="nombreNovedad"></h5>
+                                  <p class="card-text mt-3" id="precioNovedad"></p>
+                                  <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-light" style="width: 25rem;" id="novedad">
+                              <img src="" class="card-img-top" height ="400" width="500" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title" id="nombreNovedad"></h5>
+                                <p class="card-text mt-3" id="precioNovedad"></p>
+                                <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                              </div>
+                            </div>
+                          
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="5000">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="card h-100 border-light" style="width: 26.5rem;" id="novedad">
+                                <img src="" class="card-img-top" height ="400" width="500" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title" id="nombreNovedad"></h5>
+                                  <p class="card-text mt-3" id="precioNovedad"></p>
+                                  <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="card h-100 border-light" style="width: 25rem;" id="novedad">
+                                <img src="" class="card-img-top" height ="400" width="500" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title" id="nombreNovedad"></h5>
+                                  <p class="card-text mt-3" id="precioNovedad"></p>
+                                  <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-light" style="width: 25rem;" id="novedad">
+                              <img src="" class="card-img-top" height ="400" width="500" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title" id="nombreNovedad"></h5>
+                                <p class="card-text mt-3" id="precioNovedad"></p>
+                                <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                              </div>
+                            </div>
+                          
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="5000">
+                          <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                              <div class="card h-100 border-light" style="width: 25rem;" id="novedad">
+                                <img src="" class="card-img-top" height ="400" width="500" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title" id="nombreNovedad"></h5>
+                                  <p class="card-text mt-3" id="precioNovedad"></p>
+                                  <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="card h-100 border-light" style="width: 25rem;" id="novedad">
+                                <img src="" class="card-img-top" height ="400" width="500" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title" id="nombreNovedad"></h5>
+                                  <p class="card-text mt-3" id="precioNovedad"></p>
+                                  <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-light" style="width: 25rem;" id="novedad">
+                              <img src="" class="card-img-top" height ="400" width="500" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title" id="nombreNovedad"></h5>
+                                <p class="card-text mt-3" id="precioNovedad"></p>
+                                <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                              </div>
+                            </div>
+                          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+              </div>
+
+
+              <div class="row" id="apartadoRecom">
+                <div class="col-12 text-center mt-5">
+                  <H1>RECOMENDADOS</H1>
+                </div>
+                <div class="col-12">
+                  <div id="carouselExampleIndicators3" class="carousel slide text-center mt-3" data-bs-ride="carousel">
+                    
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="5000">
+                        <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-light" style="width: 25rem;" id="recomendado">
+                              <img class="card-img-top " height ="500" width="1600" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title" ></h5>
+                                <p class="card-text mt-3" ></p>
+                                <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-light" style="width: 25rem;" id="recomendado">
+                              <img  class="card-img-top" alt="..." height ="500" width="1600">
+                              <div class="card-body">
+                                <h5 class="card-title" ></h5>
+                                <p class="card-text mt-3" ></p>
+                                <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                          <div class="card h-100 border-light" style="width: 25rem;" id="recomendado">
+                            <img class="card-img-top" alt="..." height ="500" width="1600">
+                            <div class="card-body">
+                              <h5 class="card-title" ></h5>
+                              <p class="card-text mt-3" ></p>
+                              <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                            </div>
+                          </div>
+                        
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-light" style="width: 26.5rem;" id="recomendado">
+                              <img  class="card-img-top" height ="500" width="1600" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title" ></h5>
+                                <p class="card-text mt-3" ></p>
+                                <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-light" style="width: 25rem;" id="recomendado">
+                              <img  class="card-img-top" height ="500" width="1600" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title" ></h5>
+                                <p class="card-text mt-3" ></p>
+                                <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                          <div class="card h-100 border-light" style="width: 25rem;" id="recomendado">
+                            <img  class="card-img-top" height ="500" width="1600" alt="No se puede detectar la imagen">
+                            <div class="card-body">
+                              <h5 class="card-title" ></h5>
+                              <p class="card-text mt-3" ></p>
+                              <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                            </div>
+                          </div>
+                        
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item " data-bs-interval="5000">
+                        <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-light" style="width: 25rem;" id="recomendado">
+                              <img  class="card-img-top" height ="500" width="1600" alt="No se puede detectar la imagen">
+                              <div class="card-body">
+                                <h5 class="card-title" ></h5>
+                                <p class="card-text mt-3" ></p>
+                                <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card h-100 border-light" style="width: 25rem;" id="recomendado">
+                              <img  class="card-img-top" height ="500" width="1600" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title" ></h5>
+                                <p class="card-text mt-3" ></p>
+                                <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                          <div class="card h-100 border-light" style="width: 25rem;" id="recomendado">
+                            <img  class="card-img-top" height ="500" width="1600" alt="..." >
+                            <div class="card-body">
+                              <h5 class="card-title" ></h5>
+                              <p class="card-text mt-3"></p>
+                              <button class="btn btn-dark agregar-carrito" type="button"><img src="imagenes/cesta recort-PhotoRoom.png" height ="35" width="35" />Añadir</button>
+                            </div>
+                          </div>
+                        
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+            </div>
+          
+          </div>
+
+          <footer id="footer" class="jumbotron text-white bg-dark p-5 mt-5 ">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="col-lg-6 mb-3">2022 Todocachimba.com. Todos los derechos reservados
+                  <iframe class="mt-3 container-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.025543532126!2d-3.6427494846050155!3d40.38612647936861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4225b8436bdf15%3A0x590cc1650107b9ca!2sC.%20Alora%2C%208%2C%2028018%20Madrid!5e0!3m2!1ses!2ses!4v1644232652098!5m2!1ses!2ses" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-LG-6 col-lg-2 offset-lg-1 mt-4">
+                  <h5>Informacion</h5>
+                  <ul class="bg-dark text-white mt-2 ">
+                    <li class="my-3" >Condiciones de venta</li>
+                    <li class="my-3">Condiciones de uso</li>
+                    <li class="my-3">Aviso legal</li>
+                    <li class="my-3">Privacidad del sitio</li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+          </footer>
+          <div class="container-fluid-flex justify-content-center mt-5 h-100 fixed-top" id="aviso">
+            <div class="d-flex align-items-center align-self-center card p-3 text-center cookies"><span class="mt-2">Este sitio web usa Cookies</span><a class="d-flex align-items-center" href="#">Mas informacion...<i class="fa fa-angle-right ml-2"></i></a> <button class="btn btn-dark mt-3 px-4" type="button" id="cookies">Aceptar cookies</button> </div>
+          </div> 
+         
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+          <script src="./JS/carrito.js"></script>
+          <script src="./JS/pedido.js"></script>
+          
+    </body>
+</html>

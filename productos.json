@@ -1,0 +1,244 @@
+[
+
+{
+    "id":"1",
+    "nom":"Aladin MVP 360",
+    "tipo":"cachimbas",
+    "precio":"99.00€",
+    "imagen":"imagenes/productos/aladin360.jpg",
+    "recomendado":"si"
+},
+{
+    "id":"2",
+    "nom":"Aladin Epox 360 pro",
+    "tipo":"cachimbas",
+    "precio":"129.95€",
+    "imagen":"imagenes/productos/aladinEpox360.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"3",
+    "nom":"Ocean Hookah mini",
+    "tipo":"cachimbas",
+    "precio":"150.00€",
+    "imagen":"imagenes/productos/ocean mini.jpg",
+    "recomendado":"si"
+},
+{
+    "id":"4",
+    "nom":"Cachimba Wookah oak",
+    "tipo":"cachimbas",
+    "precio":"229.95€",
+    "imagen":"imagenes/productos/wookah.png",
+    "recomendado":"si"
+},
+{
+    "id":"5",
+    "nom":"Aladin MVP 470",
+    "tipo":"cachimbas",
+    "precio":"99.95€",
+    "imagen":"imagenes/productos/aladin460.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"6",
+    "nom":"Cachimba medusa queen black golden",
+    "tipo":"cachimbas",
+    "precio":"2929.95€",
+    "imagen":"imagenes/productos/medusa.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"7",
+    "nom":"Cazoleta Oblako Phunnel L",
+    "tipo":"cazoletas",
+    "precio":"29.95€",
+    "imagen":"imagenes/productos/oblako L.png",
+    "recomendado":"no"
+},
+{
+    "id":"8",
+    "nom":"Cazoleta HC Highfire Strip",
+    "tipo":"cazoletas",
+    "precio":"17.95€",
+    "imagen":"imagenes/productos/highfire strip.png",
+    "recomendado":"si"
+},
+{
+    "id":"9",
+    "nom":"Cazoleta andalushisha",
+    "tipo":"cazoletas",
+    "precio":"15.95€",
+    "imagen":"imagenes/productos/andalu.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"10",
+    "nom":"Alpaca Suri",
+    "tipo":"cazoletas",
+    "precio":"29.95€",
+    "imagen":"imagenes/productos/alpaca suri.jpg",
+    "recomendado":"si"
+},
+{
+    "id":"11",
+    "nom":"Elemento Agua 2.0",
+    "tipo":"cazoletas",
+    "precio":"17.50€",
+    "imagen":"imagenes/productos/elemento agua.jpg",
+    "recomendado":"si"
+},
+{
+    "id":"12",
+    "nom":"Alpaca Rook",
+    "tipo":"cazoletas",
+    "precio":"29.95€",
+    "imagen":"imagenes/productos/rook.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"13",
+    "nom":"Piedras para cachimba starbuzz steam stones",
+    "tipo":"sabores",
+    "precio":"9.95€",
+    "imagen":"imagenes/productos/starbuzz stones.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"14",
+    "nom":"Piedras para cachimba Frooty Rocks",
+    "tipo":"sabores",
+    "precio":"5.95€",
+    "imagen":"imagenes/productos/frooty.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"15",
+    "nom":"Gelatina Ice Rockz Apple",
+    "tipo":"sabores",
+    "precio":"5.99€",
+    "imagen":"imagenes/productos/ice rockz apple.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"16",
+    "nom":"Gelatina Black Delta",
+    "tipo":"sabores",
+    "precio":"5.99€",
+    "imagen":"imagenes/productos/black delta gelatina.jpg",
+    "recomendado":"si"
+},
+{
+    "id":"17",
+    "nom":"Gelatina Delta Ice",
+    "tipo":"sabores",
+    "precio":"5.99€",
+    "imagen":"imagenes/productos/gelatina delta ice.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"18",
+    "nom":"Glicerina vegetal cachimba Frooty Reset",
+    "tipo":"sabores",
+    "precio":"2.50€",
+    "imagen":"imagenes/productos/glicerina.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"19",
+    "nom":"Hornillo cachimba 1000W",
+    "tipo":"accesorios",
+    "precio":"19.95€",
+    "imagen":"imagenes/productos/hornillo.jpg",
+    "recomendado":"no"
+},
+
+{
+    "id":"20",
+    "nom":"Gestor de calor COLDPROV",
+    "tipo":"accesorios",
+    "precio":"14.95€",
+    "imagen":"imagenes/productos/coldprov.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"21",
+    "nom":"Gestor de calor KALOUD Lotus+1",
+    "tipo":"accesorios",
+    "precio":"59.95€",
+    "imagen":"imagenes/productos/lotus.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"22",
+    "nom":"Punzon para cachimbas",
+    "tipo":"accesorios",
+    "precio":"2.95€",
+    "imagen":"imagenes/productos/punzon.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"23",
+    "nom":"Boquilla Ice Bazoka",
+    "tipo":"accesorios",
+    "precio":"7.95€",
+    "imagen":"imagenes/productos/bozoka.jpg",
+    "recomendado":"si"
+},
+{
+    "id":"24",
+    "nom":"Gestor de calor REO",
+    "tipo":"accesorios",
+    "precio":"24.95€",
+    "imagen":"imagenes/productos/reo.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"25",
+    "nom":"Boquilla 3D Real Madrid",
+    "tipo":"boquillas",
+    "precio":"6.95€",
+    "imagen":"imagenes/productos/boquilla real.jpg",
+    "recomendado":"si"
+},
+{
+    "id":"26",
+    "nom":"Boquilla 3D Real Betis",
+    "tipo":"boquillas",
+    "precio":"8.95€",
+    "imagen":"imagenes/productos/betis.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"28",
+    "nom":"Boquilla 3D Bella Ciao",
+    "tipo":"boquillas",
+    "precio":"6.95€",
+    "imagen":"imagenes/productos/bella.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"29",
+    "nom":"Boquilla 3D bunny",
+    "tipo":"boquillas",
+    "precio":"6.95€",
+    "imagen":"imagenes/productos/bunny.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"30",
+    "nom":"Boquilla 3D impostor",
+    "tipo":"boquillas",
+    "precio":"6.95€",
+    "imagen":"imagenes/productos/impostor.jpg",
+    "recomendado":"no"
+},
+{
+    "id":"31",
+    "nom":"Boquilla 3D Nube toxica",
+    "tipo":"boquillas",
+    "precio":"6.95€",
+    "imagen":"imagenes/productos/nube.jpg",
+    "recomendado":"no"
+}
+]
